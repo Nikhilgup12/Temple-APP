@@ -1,0 +1,131 @@
+/* In your CSS file */
+
+.carousel-image {
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
+  border-radius: 6px;
+}
+.carousel-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+}
+.slider-container {
+  padding: 20px;
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+}
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.faq-question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+  padding: 0px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.faq-heading {
+  font-size: 30px;
+  color: #cb8805;
+  font-weight: bold;
+  font-family: Roboto;
+}
+.faq-list-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  padding-left: 0px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+.image-detail-container {
+  display: flex;
+  padding: 20px;
+}
+@media screen and (max-width: 767px) {
+  .image-detail-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+.location-container {
+  background-color: #f8f8f8;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.location-container div {
+  margin-bottom: 20px;
+}
+
+.location-container h3 {
+  margin-top: 0;
+}
+
+.location-container p {
+  margin: 0;
+}
+
+.location-container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .location-container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .location-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.image-detail-heading {
+  font-size: 30px;
+}
+.image-detail-para {
+  font-size: 12px;
+}
+.temple-detail-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 950px;
+  padding: 30px;
+}
+.active-star {
+  width: 10px;
+}
+.star-container {
+  display: flex;
+}
+.active-button {
+  background-color: transparent;
+  border-width: 0px;
+}

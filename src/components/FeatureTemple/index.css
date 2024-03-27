@@ -1,0 +1,31 @@
+.featured-header-container {
+  background-color: #fff6d7;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.featured-heading {
+  font-size: 20px;
+  padding-left: 30px;
+}
+.featured-image-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-left: 0px; */
+  padding: 20px;
+  list-style: none;
+
+  width: 750px;
+}
+.featured-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.featured-list-temple {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 10px;
+}

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Home from "./components/Home";
+import ImageDetail from "./components/ImageDetail";
+import About from "./components/About";
+import NearbySearch from "./components/NearbySearch";
+import AddTemple from "./components/AddTemple";
+import FeatureTemple from "./components/FeatureTemple";
+import "./App.css";
+
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/image-detail/:id" element={<ImageDetail />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/nearby-search" element={<NearbySearch />} />
+      <Route path="/addTemple" element={<AddTemple />} />
+      <Route path="/featured-temple" element={<FeatureTemple />} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;
